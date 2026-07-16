@@ -21,75 +21,69 @@ public class CustomerScriptableObject : ScriptableObject
 
     [Header("Character Assets")]
     [SerializeField] private Image defaultSprite;
-    [SerializeField] private DialogueScriptableObject dialogue;
 
-    int GetID()
+    public int GetID()
     {
         return id;
     }
 
-    string GetName()
+    public string GetName()
     {
         return name;
     }
 
-    string GetDrinkPreference()
+    public string GetDrinkPreference()
     {
         return drinkPreference;
     }
 
-    string GetState()
+    public string GetState()
     {
         return state;
     }
 
-    void SetState(string newState)
+    public void SetState(string newState)
     {
         state = newState;
     }
 
-    string GetMood()
+    public string GetMood()
     {
         return mood;
     }
 
-    void SetMood(string newMood)
+    public void SetMood(string newMood)
     {
         mood = newMood;
     }
 
-    int GetFriendShipLevel()
+    public int GetFriendShipLevel()
     {
         return friendshipLvl;
     }
 
-    void IncreaseFriendship(int points)
+    public void IncreaseFriendship(int points)
     {
         friendshipLvl += points;
     }
 
-    void DecreaseFriendship(int points)
+    public void DecreaseFriendship(int points)
     {
         friendshipLvl -= points;
     }
 
-    float GetTextSpeed()
+    public float GetTextSpeed()
     {
         return textSpeed;
     }
 
-    void SetTextSpeed(float newTextSpeed)
+    public void SetTextSpeed(float newTextSpeed)
     {
         textSpeed = newTextSpeed;
     }
 
-    Image GetDefaultSprite()
+    public Image GetDefaultSprite()
     {
         return defaultSprite;
-    }
-
-    DialogueScriptableObject GetDialogue()
-    {
-        return dialogue;
     }
 }

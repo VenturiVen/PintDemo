@@ -13,7 +13,7 @@ public class RandDialogue
 [System.Serializable]
 public class Conversation
 {
-    [SerializeField] private string conversationName;
+    [SerializeField] public string conversationName;
     [SerializeField] public string[] line;
 
     public string ConversationName => conversationName;
