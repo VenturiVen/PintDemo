@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 
-public class DragTest : MonoBehaviour
+public class PintDrag : MonoBehaviour
 {
 
     [SerializeField] private bool isDragging = false;

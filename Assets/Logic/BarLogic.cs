@@ -14,7 +14,7 @@ public class BarLogic : MonoBehaviour
     {
             ui = GetComponent<UILogic>();
             dialogue = CustomerUI.transform.Find("DialogueBox").GetComponent<Dialogue>();
-            ui.ToggleGameObject(CustomerUI);
+            DisableCustomerUI();
     }
 
     public void CustomerClick(CustomerScriptableObject customerScript, DialogueScriptableObject dialogueScript)
