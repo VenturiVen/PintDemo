@@ -8,6 +8,8 @@ TagManager:
   - Customer
   - CustomerUI
   - HUD
+  - TapsArray
+  - Particle
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - UI
   - Clickable
   - Particles
-  - 
+  - Pint
   - 
   - 
   - 

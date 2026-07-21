@@ -7,8 +7,18 @@ public class TapTest : MonoBehaviour
 
     [SerializeField] public ParticleSystem particles;
 
-    private void OnMouseDown()
+    void Start()
     {
-        particles.Play();
+        particles = GetComponent<ParticleSystem>();
+    }
+
+    void OnParticleCollision(GameObject other)
+    {
+        var pint = other.GetComponent<PintFill>();
+
+        if (pint != null)
+        {
+            pint.Fill();
+        }
     }
 }
